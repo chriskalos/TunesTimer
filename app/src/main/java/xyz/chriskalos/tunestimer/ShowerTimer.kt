@@ -1,7 +1,6 @@
 package xyz.chriskalos.tunestimer
 
 import android.media.MediaPlayer
-import android.media.MediaPlayer.OnCompletionListener
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.util.Log
@@ -23,7 +22,7 @@ class ShowerTimer : AppCompatActivity() {
 //        val mediaPlayerDing1 = MediaPlayer.create(this, R.raw.ding)
 //        val mediaPlayerDing2 = MediaPlayer.create(this, R.raw.ding)
 //        val mediaPlayerDing3 = MediaPlayer.create(this, R.raw.ding)
-        var tempDuration = mediaPlayer.duration
+        val tempDuration = mediaPlayer.duration
 //        totalDuration += tempDuration*4
 //        val mediaPlayer2 = MediaPlayer.create(this, R.raw.song1)
 //        tempDuration = mediaPlayer2.duration
@@ -38,8 +37,8 @@ class ShowerTimer : AppCompatActivity() {
         var totalSeconds= totalDuration / 1000
         var minutes = totalDuration / 1000 / 60
         var seconds = totalDuration / 1000 % 60
-        var elaReGamwto: String = "$minutes minutes, $seconds seconds."
-        binding.timerDurationView.text = elaReGamwto
+        var remainingTime: String = "$minutes minutes, $seconds seconds."
+        binding.timerDurationView.text = remainingTime
 
         val timer = object: CountDownTimer(totalDuration, 1000) {
             override fun onTick(millisUntilFinished: Long) {
@@ -51,8 +50,8 @@ class ShowerTimer : AppCompatActivity() {
                     seconds = 59
                     minutes--
                 }
-                elaReGamwto = "$minutes minutes, $seconds seconds"
-                binding.timerDurationView.text = elaReGamwto
+                remainingTime = "$minutes minutes, $seconds seconds"
+                binding.timerDurationView.text = remainingTime
                 var newProgress: Int = 100-((totalSeconds.toFloat()/(totalDuration.toFloat()/1000))*100).toInt()
                 Log.d(TAG, "newProgress: $newProgress")
                 Log.d(TAG, "totalSeconds: $totalSeconds")
@@ -61,8 +60,8 @@ class ShowerTimer : AppCompatActivity() {
 
             override fun onFinish() {
                 mediaPlayer.stop()
-                elaReGamwto = "Timer done!"
-                binding.timerDurationView.text = elaReGamwto
+                remainingTime = "Timer done!"
+                binding.timerDurationView.text = remainingTime
             }
         }
 
