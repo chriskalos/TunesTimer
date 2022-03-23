@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/circle_shape.xml" value="0.2535" />
+        <entry key="app/src/main/res/drawable/circular_progress_bar.xml" value="0.2772125244140625" />
+        <entry key="app/src/main/res/layout/activity_alarm_picker.xml" value="0.36041666666666666" />
+        <entry key="app/src/main/res/layout/activity_feedback.xml" value="0.2994427803235176" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.27742381207819833" />
+        <entry key="app/src/main/res/layout/activity_pools.xml" value="0.2776268115942029" />
+        <entry key="app/src/main/res/layout/activity_shower_timer.xml" value="0.29572649572649573" />
+        <entry key="app/src/main/res/layout/activity_timer.xml" value="0.2772672524444724" />
+        <entry key="app/src/main/res/layout/fragment_alarm_picker.xml" value="0.2776268115942029" />
+        <entry key="app/src/main/res/layout/settings_activity.xml" value="0.2776268115942029" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.197" />
+        <entry key="app/src/main/res/xml/root_preferences.xml" value="0.29572649572649573" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.29622955322265626" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
