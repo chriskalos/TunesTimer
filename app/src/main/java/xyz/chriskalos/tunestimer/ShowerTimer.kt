@@ -38,7 +38,7 @@ class ShowerTimer : AppCompatActivity() {
         var totalSeconds= totalDuration / 1000
         var minutes = totalDuration / 1000 / 60
         var seconds = totalDuration / 1000 % 60
-        var elaReGamwto: String = "$minutes minutes, $seconds seconds."
+        var elaReGamwto: String = "$minutes minutes, $seconds seconds"
         binding.timerDurationView.text = elaReGamwto
 
         val timer = object: CountDownTimer(totalDuration, 1000) {
