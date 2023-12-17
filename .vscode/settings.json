@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "/home/chriskalos/Documents/code/tunestimer/linux/flutter"
+    "cmake.sourceDirectory": "/home/chriskalos/Documents/code/tunestimer/linux/flutter",
+    "java.compile.nullAnalysis.mode": "automatic"
 }
